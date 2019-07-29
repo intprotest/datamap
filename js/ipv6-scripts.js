@@ -7,7 +7,7 @@ var sMonth = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
 var sFullDay = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
 
-var baseUrl = '/fetch-dv-data/ipv6/';
+var baseUrl = '/datamap/fetch-dv-data/ipv6/';
 //baseUrl = 'json/';
 
 var jq = jQuery.noConflict();
@@ -242,7 +242,7 @@ function init(){
 
 function getTopoUrl() {
     var jvFileName, flag;
-    jvFileName = "/map/geojson/world-";
+    jvFileName = "/datamap/map/geojson/world-";
     var countryCodes = ['IN', 'CN', 'PK'];
     if (typeof window.AKAMAI !== 'undefined' && typeof window.AKAMAI.UTILS !== 'undefined') {
         var index, code;
