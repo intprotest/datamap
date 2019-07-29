@@ -242,7 +242,7 @@ function init(){
 
 function getTopoUrl() {
     var jvFileName, flag;
-    jvFileName = "/assets/lib/map/geojson/world-";
+    jvFileName = "/map/geojson/world-";
     var countryCodes = ['IN', 'CN', 'PK'];
     if (typeof window.AKAMAI !== 'undefined' && typeof window.AKAMAI.UTILS !== 'undefined') {
         var index, code;
