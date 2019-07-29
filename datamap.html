@@ -1,0 +1,211 @@
+
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en-GB" id="nav" class="wf-active no-js">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+<meta name="apple-mobile-web-app-title" content="Akamai"> 
+<meta name="application-name" content="Akamai">
+<meta name="msapplication-TileColor" content="#0099cc">
+<meta name="theme-color" content="#0099cc">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<link  href="/css/screen.1540869889.css" rel="stylesheet" type="text/css" />
+ 
+
+
+
+
+ 
+                
+                    </head>
+<body>
+<script type="text/javascript" src="/js/preloader.built.1540869889.js"></script>
+
+
+ 
+
+<div class="page-wrapper--outer" id="main">
+
+
+
+
+
+</header> 
+
+
+ 
+<div class="page-wrapper--inner scene_element scene_element--fadein" id="page-wrapper">
+<main role="main">
+<div data-swiftype-name="body" data-swiftype-type="text">
+<header class="hero-intro-region hero-intro hero-intro__overlay" data-ui-component="hero-intro">
+
+<div class="inner-wrapper">
+<div class="region__inner ">
+<nav class="breadcrumbs clearfix">
+<ul class="bare-list inline-list">
+
+<div class="span_12">
+<h1 class="hero-intro__title introTitle" itemprop="name"> 
+IPv6 Adoption Visualization 
+</h1>
+
+
+</div>
+</div>
+</header> <div class=outer-wrapper>
+<div class="inner-wrapper">
+<section class="span_12 main-region">
+<div class="region__inner ">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<style>
+/* Overwriting Styles*/
+[class*="-region"].hero-intro-region{padding-bottom: 4.3rem;}
+.page-wrapper--inner main{margin-bottom: 0 !important}
+.bootstrap-iso{font-family: Ubuntu,Helvetica,Arial,Lucida Grande,sans-serif; background-color: transparent; margin-top: -100px;}
+.dataTables_wrapper{font-family: Ubuntu,Helvetica,Arial,Lucida Grande,sans-serif;}
+.bootstrap-iso ul.navigation{overflow: hidden; padding: 0; margin: 20px -15px 30px;}
+.bootstrap-iso ul.navigation > li{list-style: none; float: left;}
+.bootstrap-iso ul.navigation > li > a{padding: 15px 15px 18px; color: #FFF; font-size: 18px; position: relative; display: block;}
+.bootstrap-iso ul.navigation > li > a:hover{text-decoration: none; color: #FFF}
+.bootstrap-iso ul.navigation > li.active > a:before{content: ""; position: absolute; left: 15px; right: 0; display: block; width: 70%;max-width: 75px; height: 1px; bottom: 0px; border-bottom: 4px solid #000;}
+.bootstrap-iso .section-content .section-pane{display: none;}
+.bootstrap-iso .section-content .section-pane.active{display: block;}
+.bootstrap-iso h4{font-weight: 400;}
+.bootstrap-iso a.map-toggle{width: 30px; height: 30px; border-radius: 30px; background-color: #DDD; padding: 5px;}
+.bootstrap-iso a.map-toggle > span:before{font-size: 21px; color: #646464; right: auto !important; top: auto !important; -webkit-transform: translateY(0%) !important; -ms-transform: translateY(0%) !important; transform: translateY(0%) !important; position: static;}
+.bootstrap-iso .map_container{border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; padding: 20px 0; margin-bottom: 60px;}
+.bootstrap-iso a.chart-toggle{width: 24px; height: 24px; border-radius: 30px; padding: 0 0 0 1px; border: 2px solid #999; display: block;}
+.bootstrap-iso a.chart-toggle > span:before{font-size: 18px; color: #999; right: auto !important; top: auto !important; -webkit-transform: translateY(0%) !important; -ms-transform: translateY(0%) !important; transform: translateY(0%) !important; position: static;}
+.bootstrap-iso a.chart-toggle.collapse-chart{background-color: #999;}
+.bootstrap-iso a.chart-toggle.collapse-chart > span:before{color: #FFF;}
+.bootstrap-iso table.table{width: 100% !important; font-size: 16px;}
+.bootstrap-iso table tr{width: 100%; display: table;}
+.bootstrap-iso table tr.trChart{vertical-align: top; position: relative; height: 280px}
+.bootstrap-iso table th{text-transform: uppercase; padding-right: 8px !important; padding-left: 8px !important;}
+.bootstrap-iso table th:before{font-family: Icomoon !important; content: "" !important;font-size: 21px; position: absolute; left: 0px; top: 5px;}
+.bootstrap-iso table th.sorting_asc:before{content: "\e618" !important}
+.bootstrap-iso table th.sorting_desc:before{content: "\e619" !important}
+.bootstrap-iso table th:after{display: none !important;}
+.bootstrap-iso table th.rank, .bootstrap-iso table td.rank{width: 100px !important; text-align: center;}
+.bootstrap-iso table th.rank:before{left: 15px;}
+.bootstrap-iso table th.ipv6, .bootstrap-iso table td.ipv6{width: 70px !important;text-align: center;}
+.bootstrap-iso table th.ipv6:before{left: -2px;}
+.bootstrap-iso table th.country, .bootstrap-iso table th.network, .bootstrap-iso table td.country, .bootstrap-iso table td.network{width: calc(100% - 210px) !important; padding-left: 20px !important}
+.bootstrap-iso table th.country:before, .bootstrap-iso table th.network:before{left: 0px;}
+.bootstrap-iso table th.toggle, .bootstrap-iso table td.toggle{width: 40px !important;}
+.bootstrap-iso table th.data-row, .bootstrap-iso table td.data-row{display: none;}
+.bootstrap-iso table td.data-row{width: 100%; position: absolute; left: 0; top: 44px;}
+.bootstrap-iso table th.toggle:after{opacity: 0 !important}
+.bootstrap-iso table td{padding: 14px 8px !important;}
+.bootstrap-iso table td.ipv6, .bootstrap-iso table td.rank{text-align: center;}
+.bootstrap-iso table td.rank{color: #ff9933;}
+.bootstrap-iso table.table-networks td.rank{color: #0099cc}
+.bootstrap-iso table td.country{color: #ff9933; padding-left: 20px !important}
+.bootstrap-iso table td.network{color: #0099cc; padding-left: 20px !important}
+.bootstrap-iso .table-container .dataTables_filter > label{font-weight: normal; padding-top: 10px;}
+.bootstrap-iso .table-container .dataTables_filter > label > input{float: right; width: 230px; margin-top: -10px; padding: 5px; border-radius: 8px;}
+.bootstrap-iso .table-container .pagination{width: auto !important;}
+.bootstrap-iso .table-container .pagination a{width: auto !important; height: auto !important; font-size: 14px !important;}
+.bootstrap-iso .table-container .pagination a:before{color: #FFF; font-size: 20px; width: 0;}
+.bootstrap-iso .table-container .dataTables_filter{position: absolute; z-index: 99; right: 15px; top: 0px;}
+.bootstrap-iso .table-container table.dataTable tbody tr[role="row"] {cursor: pointer;border-top: 1px solid #dddddd;}
+.bootstrap-iso .disclaimer {font-size: 10px;font-style: italic;}
+.bootstrap-iso .highcharts-container hr {padding: 0;margin: 0;}
+div.dataTables_wrapper div.dataTables_info{white-space: pre-wrap;}
+.bootstrap-iso a:focus{outline: inherit;}
+div.dataTables_wrapper div.dataTables_filter label{white-space: pre-wrap;}
+@media(max-width: 768px){
+.bootstrap-iso table th.rank{width: 120px;text-align: center;}
+.bootstrap-iso table th.ipv6{width: 120px;text-align: center;}
+.bootstrap-iso table th.country, .bootstrap-iso table th.network{width: calc(100% - 280px)} 
+.bootstrap-iso .table-container .dataTables_filter{position: static; z-index: 0; right: auto; top: auto;}
+.bootstrap-iso table td.data-row{border: 0 none !important; height: 280px; top: 65px;}
+.bootstrap-iso table tr.trChart{height: 305px;}
+.bootstrap-iso table td{font-size: 12px}
+}
+@media(max-width: 600px){
+.bootstrap-iso table{font-size: 12px;}
+.bootstrap-iso table th:before{top: 5px; font-size: 16px;}
+.bootstrap-iso table th.rank, .bootstrap-iso table td.rank{width: 40px !important;}
+.bootstrap-iso table th.rank:before{left: -5px}
+.bootstrap-iso table th.ipv6, .bootstrap-iso table td.ipv6{width: 60px !important;}
+.bootstrap-iso table th.ipv6:before{left: 0;}
+.bootstrap-iso table th.country, .bootstrap-iso table th.network, .bootstrap-iso table td.country, .bootstrap-iso table td.network{width: calc(100% - 140px);}
+}
+</style>
+<div class="bootstrap-iso">
+<ul class="navigation">
+<li class="active"><a data-tab="#countries">Countries</a></li>
+<li><a data-tab="#networks">Networks</a></li>
+</ul>
+<div class="section-content">
+<div class="section-pane active" id="countries-content">
+<div class="map_container">
+<h4 class="pull-left">IPv6 Adoption By Country</h4>
+<a class="pull-right map-toggle map-expanded"><span data-icon="chevron-down"></span></a>
+<div class="clearfix"></div>
+<div id="map"></div>
+</div> 
+<div class="table-container"></div>
+</div>
+<div class="section-pane" id="networks-content">
+<h4>IPv6 Adoption By Networks</h4> 
+<div class="table-container"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+</div>
+
+</main>
+</div>
+
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="/js/akamai-utils.js"></script>
+
+<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+
+<script type="text/javascript" src="https://code.highcharts.com/maps/modules/map.js"></script>
+
+<script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<script type="text/javascript" src="http://code.highcharts.com/modules/export-data.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<script type="text/javascript" src="/js/ipv6-scripts.js"></script>
+
+
+<script type="text/javascript" src="/js/fontloader.built.1540869889.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
